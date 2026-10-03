@@ -1,0 +1,39 @@
+# Publish only maintained source, tools and reader/developer documentation.
+# Generated files and local maintenance records stay on the developer's device.
+/*
+
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/Developers.md
+!/History.md
+!/LICENSE
+!/manage.py
+!/sign-on-windows.cmd
+
+!/src/
+/src/*
+!/src/calshot/
+/src/calshot/*
+!/src/calshot/*.py
+
+!/scripts/
+/scripts/*
+!/scripts/*.ps1
+
+!/tests/
+/tests/*
+!/tests/*.py
+!/tests/*.ps1
+
+# Never publish generated Shortcuts, private inputs, credentials or caches.
+/dist/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pem
+*.key
+*.shortcut
+*.plist
+*.zip
